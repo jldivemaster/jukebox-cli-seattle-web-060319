@@ -28,3 +28,24 @@ end
 def exit
   puts "Goodbye"
 end
+
+def run
+  help
+
+  done = false
+  while !done
+    puts "Please enter a command:"
+    input = gets.chomp
+
+    if input == "list"
+      list
+    elsif input == "play"
+      play
+    elsif input == "help"
+      help
+    elsif input == "exit"
+      exit
+      done
+    end
+  end
+end
