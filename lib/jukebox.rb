@@ -31,17 +31,17 @@ end
 
 def run
   help
-
   puts "Please enter a command:"
   while input = gets.chomp
 
-    if input == "list"
+    case input
+    when "list"
       list(songs)
-    elsif input == "play"
+    when "play"
       play(songs)
-    elsif input == "help"
+    when "help"
       help
-    elsif input == "exit"
+    when "exit"
       exit_jukebox
       break
     end
