@@ -38,9 +38,9 @@ def run
     input = gets.chomp
 
     if input == "list"
-      list
+      list(songs)
     elsif input == "play"
-      play
+      play(songs)
     elsif input == "help"
       help
     elsif input == "exit"
