@@ -32,8 +32,8 @@ end
 def run
   help
 
-  done = false
-  while !done
+  in_use = true
+  while in_use
     puts "Please enter a command:"
     input = gets.chomp
 
@@ -45,7 +45,7 @@ def run
       help
     elsif input == "exit"
       exit_jukebox
-      done
+      in_use = false
     end
   end
 end
