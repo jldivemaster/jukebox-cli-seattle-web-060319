@@ -32,10 +32,8 @@ end
 def run
   help
 
-  in_use = true
-  while in_use
-    puts "Please enter a command:"
-    input = gets.chomp
+  puts "Please enter a command:"
+  while input = gets.chomp
 
     if input == "list"
       list(songs)
@@ -45,7 +43,7 @@ def run
       help
     elsif input == "exit"
       exit_jukebox
-      in_use = false
+      break
     end
   end
 end
