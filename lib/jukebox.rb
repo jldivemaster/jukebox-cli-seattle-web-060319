@@ -25,7 +25,7 @@ def play(songs)
   end
 end
 
-def exit
+def exit_jukebox
   puts "Goodbye"
 end
 
@@ -44,7 +44,7 @@ def run
     elsif input == "help"
       help
     elsif input == "exit"
-      exit
+      exit_jukebox
       done
     end
   end
